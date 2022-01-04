@@ -1,3 +1,102 @@
 .App {
   text-align: center;
+  background-image: url('./images/background.png');
+  min-height: 100vh;
+}
+
+.mainTitle {
+  padding-top: 30px;
+}
+
+.Title {
+  border: 1px solid rgb(184, 181, 181);
+  border-radius: 5px;
+  width: 300px;
+  background: rgb(0,0,0,0.3);
+}
+
+.planetSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.planetContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.planetCard {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 8);
+}
+
+.missionSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.missionContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px 0;
+  justify-content: space-around;
+}
+
+.missionCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(184, 181, 181);
+  border-radius: 5px;
+  background: rgb(0,0,0,0.3);
+  width: 250px;
+  height: 100%;
+  margin: 10px;
+}
+
+.cardItem {
+  margin-top: 5px;
+  margin-left: 30px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.line {
+  background-color: rgb(184, 181, 181);
+  width: 100%;
+  height: 1px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 479px) {
+  * {
+    font-size: 1.03em;
+  }
+
+  .mainTitle {
+    padding: 20px 0;
+  }
+
+  .planetSection {
+    padding: 20px 0;
+  }
+
+  .planetContainer {
+    overflow-x: auto;
+  }
+
+  .planetCard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
